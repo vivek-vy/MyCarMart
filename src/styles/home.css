@@ -1,0 +1,86 @@
+
+.filtered-cars,
+.filter-car {
+  background: #fff;
+  /* padding: 20px; */
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+  margin-bottom: 2rem;
+}
+
+.card-img {
+  width: 180px;
+  height: 120px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+}
+.card-img:hover {
+  transform: scale(1.20);
+}
+
+/* pagination */
+
+.page-link {
+  margin: 7px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: none;
+  
+}
+
+.first-btn .page-link,
+.pre-btn .page-link,
+.next-btn .page-link,
+.last-btn .page-link {
+  color: transparent;
+}
+
+.first-btn .page-link::before {
+  content: "First";
+  color: black;
+}
+.pre-btn .page-link::before {
+  content: "Pre";
+  color: black;
+}
+
+.next-btn .page-link::before {
+  content: "Next";
+  color: black;
+}
+.last-btn .page-link::before {
+  content: "Last";
+  color: black;
+}
+
+
+@media (max-width:500px) {
+
+  .card-img {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  font-size: medium !important;
+}
+
+
+.page-link {
+  margin: 0;
+ font-size: 1rem;
+}
+
+.pagination{
+  margin-top: 15px;
+  flex-wrap: wrap !important;
+ gap: 5px;
+}
+  
+}

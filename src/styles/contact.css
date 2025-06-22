@@ -1,0 +1,36 @@
+.banner-content .banner-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  /* color:darkblue; */
+  /* color: rgb(228, 246, 25); */
+
+}
+.banner-content {
+  position: absolute;
+  /* top: 120px;
+  left: 200px; */
+  top: 40%;
+  left: 35%;
+}
+
+@media (max-width: 768px) {
+  .banner .banner-image img {
+    height: 200px !important;
+  }
+  .banner-content .banner-heading {
+    font-size: xx-large;
+  }
+  .banner-content {
+    left: 7rem;
+    top: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner-content {
+    left: 5rem;
+  }
+  .contact-form{
+        width: 100% !important;
+  }
+}

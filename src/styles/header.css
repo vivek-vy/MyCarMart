@@ -1,0 +1,48 @@
+
+
+
+
+@media (min-width: 768px) {
+  .nav-link:before {
+    bottom: 0;
+    top: auto;
+  }
+
+  .nav-link:before {
+    background-color: #1e4fbc;
+    content: " ";
+    height: 3px;
+    opacity: 0;
+    /* left: 50%; */
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+    width: 100%;
+  }
+
+  .nav-link.active::before,
+  .nav-link:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .navbar-nav:hover .nav-link.active::before {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  
+}
+/* mobile view */
+.menu-icon::before {
+  content: "";
+  /* content: " "; */
+  opacity: 1;
+  cursor: pointer;
+  border-color: none;
+  color: #1e4fbc;
+  font-size: 1rem;
+
+}
+
+
